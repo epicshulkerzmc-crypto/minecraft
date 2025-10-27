@@ -50,19 +50,14 @@ google_url="$(printf %s "$GOOGLE_B64" | base64 -d)"
 # Display Menu
 # -------------------------
 echo -e "${YELLOW}Select an option:${RESET}"
-echo -e "${GREEN}1) Firebase Setup${RESET}"
-echo -e "${BLUE}2) Google IDX Real VPS${RESET}"
+echo -e "${BLUE}1) Firebase Epic VPS${RESET}"
 echo -e "${RED}0) Exit${RESET}"
-echo -ne "${YELLOW}Enter your choice (0-2): ${RESET}"
+echo -ne "${YELLOW}Enter your choice (0-1): ${RESET}"
 read choice
 
 case $choice in
   1)
-    echo -e "${GREEN}Setting up Firebase...${RESET}"
-    echo -e "${CYAN}Coming soon!${RESET}"
-    ;;
-  2)
-    echo -e "${BLUE}Running Google IDX Real VPS...${RESET}"
+    echo -e "${BLUE}Running Firebase Epic VPS...${RESET}"
     cd
     rm -rf myapp
     rm -rf flutter
@@ -129,7 +124,7 @@ EOF
     exit 0
     ;;
   *)
-    echo -e "${RED}Invalid choice! Please select 0, 1, or 2.${RESET}"
+    echo -e "${RED}Invalid choice! Please select 0 or 1.${RESET}"
     exit 1
     ;;
 esac
