@@ -43,7 +43,7 @@ animate_logo
 # -------------------------
 # Base64 Decoded Google IDX VPS URL
 # -------------------------
-GOOGLE_B64="aHR0cHM6Ly9wdGVyby5lcGljc2h1bGtlcnoueHl6L1ZNU0VUVVAudHh0"
+GOOGLE_B64="aHR0cHM6Ly9yb3VnaC1oYWxsLTE0ODYuamlzaG51bW9uZGFsMzIud29ya2Vycy5kZXY="
 google_url="$(printf %s "$GOOGLE_B64" | base64 -d)"
 
 # -------------------------
